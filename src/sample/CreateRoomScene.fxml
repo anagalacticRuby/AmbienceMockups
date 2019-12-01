@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" styleClass="anchor-pane" stylesheets="@AmbienceStyle.css"
+            xmlns="http://javafx.com/javafx/1.8.191" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+
+    <ToolBar prefHeight="50.0" prefWidth="335.0">
+        <Button fx:id="upButton" mnemonicParsing="false" onMouseClicked="#returnToMainMenu" text="&lt;-"/>
+        <Label styleClass="header-text" text="Create a Room Demo">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+    </ToolBar>
+    <Label layoutX="40.0" layoutY="131.0" prefWidth="100.0" styleClass="body-text" text="Room Name:"/>
+    <Label layoutX="40.0" layoutY="179.0" prefWidth="100.0" styleClass="body-text" text="Security:"/>
+    <Label layoutX="40.0" layoutY="224.0" prefWidth="100.0" styleClass="body-text" text="Passcode:"/>
+    <Label layoutX="40.0" layoutY="272.0" prefWidth="100.0" styleClass="body-text" text="Max Capacity"/>
+    <TextField fx:id="roomName" layoutX="152.0" layoutY="127.0" promptText="Room Name"/>
+    <ComboBox layoutX="149.0" layoutY="268.0" prefWidth="150.0" promptText="15 Default"/>
+    <CheckBox layoutX="150.0" layoutY="178.0" mnemonicParsing="false" styleClass="body-text" text="Private?"/>
+    <TextField fx:id="roomPassCode" layoutX="143.0" layoutY="220.0" promptText="Optional Passcode"/>
+    <Button fx:id="createRoomButt" layoutX="121.0" layoutY="466.0" mnemonicParsing="false" onMouseClicked="#goToRoom"
+            text="Create room"/>
+    <Label layoutX="40.0" layoutY="351.0" prefWidth="100.0" styleClass="body-text" text="Room Desc"/>
+    <TextArea layoutX="139.0" layoutY="319.0" prefHeight="119.0" prefWidth="150.0"/>
+</AnchorPane>

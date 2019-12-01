@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" styleClass="anchor-pane" xmlns="http://javafx.com/javafx/1.8.191"
+            xmlns:fx="http://javafx.com/fxml/1" stylesheets="@AmbienceStyle.css" fx:controller="sample.Controller">
+    <TextArea layoutX="42.0" layoutY="387.0" prefHeight="126.0" prefWidth="247.0" text="Sample Response to Text"/>
+    <TextArea layoutX="68.0" layoutY="237.0" prefHeight="126.0" prefWidth="247.0" text="Sample Speech to Text"/>
+    <Label layoutX="38.0" layoutY="520.0" styleClass="body-text" text="FunnyUser (You)"/>
+    <Label layoutX="247.0" layoutY="213.0" styleClass="body-text" text="Test Dummy"/>
+    <ToolBar prefHeight="50.0" prefWidth="335.0">
+        <Button fx:id="upButton" mnemonicParsing="false" onMouseClicked="#returnToMainMenu" text="&lt;-"/>
+        <Label styleClass="header-text" text="Sample Room Name"/>
+        <Separator orientation="VERTICAL"/>
+        <MenuButton alignment="CENTER" contentDisplay="BOTTOM" layoutX="330.0" mnemonicParsing="false"
+                    style="-fx-base: derive(purple, 20%);" text="⸫">
+            <items>
+                <MenuItem mnemonicParsing="false" text="Export.."/>
+                <MenuItem mnemonicParsing="false" text="Invite.."/>
+            </items>
+        </MenuButton>
+    </ToolBar>
+</AnchorPane>

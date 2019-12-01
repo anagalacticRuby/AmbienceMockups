@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" styleClass="anchor-pane"
+            xmlns="http://javafx.com/javafx/1.8.191" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <ToolBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="50.0" prefWidth="335.0" AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="0.0">
+            <items>
+                <Label styleClass="header-text" text="Ambience Ui Mockups" textAlignment="CENTER" translateX="50.0">
+                    <font>
+                        <Font name="Marlett" size="24.0"/>
+                    </font>
+                </Label>
+            </items>
+        </ToolBar>
+        <VBox layoutX="88.0" layoutY="112.0" spacing="10.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="20.0" prefWidth="150.0" styleClass="body-text" text="Create Room"
+                       textFill="#e178f6">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Hyperlink fx:id="createRoomLink" alignment="CENTER" onMouseClicked="#goToCreate" prefHeight="20.0"
+                           prefWidth="150.0" text="Go to Scene">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Hyperlink>
+                <Label alignment="CENTER" prefHeight="20.0" prefWidth="150.0" text="Join Room" textFill="#be71d9">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Hyperlink fx:id="joinRoomLink" alignment="CENTER" onMouseClicked="#goToJoin" prefHeight="20.0"
+                           prefWidth="150.0" text="Go to Scene">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Hyperlink>
+                <Label alignment="CENTER" prefHeight="20.0" prefWidth="150.0" styleClass="body-text"
+                       text="Nickname Screen" textFill="#e178f6">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Hyperlink fx:id="nicknameLink" alignment="CENTER" onMouseClicked="#goToNickname" prefHeight="20.0"
+                           prefWidth="150.0" text="Go to Scene">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Hyperlink>
+                <Label alignment="CENTER" prefHeight="20.0" prefWidth="150.0" styleClass="body-text"
+                       text="Room Example?" textFill="#e178f6">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Hyperlink fx:id="roomLink" alignment="CENTER" onMouseClicked="#goToRoom" prefHeight="20.0"
+                           prefWidth="150.0" text="Go to Scene">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Hyperlink>
+                <CheckBox fx:id="themebutt" alignment="CENTER" indeterminate="true" mnemonicParsing="false"
+                          onAction="#changeTheme" prefHeight="20.0" prefWidth="150.0" style="-fx-text-fill: ghostwhite;"
+                          styleClass="body-text" text="Change Theme?">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </CheckBox>
+            </children>
+            <padding>
+                <Insets bottom="5.0"/>
+            </padding>
+        </VBox>
+        <VBox alignment="CENTER_LEFT" layoutX="62.0" layoutY="449.0" prefHeight="98.0" prefWidth="210.0" spacing="10.0">
+            <children>
+                <Label fx:id="bgColorText" alignment="CENTER" prefWidth="210.0" text="Background Color: #212128"
+                       textFill="#fff"/>
+                <Label fx:id="headerTextColor" alignment="CENTER" prefWidth="210.0" styleClass="header-text"
+                       text="Header Text Color: #f5007a" textFill="#f5007a"/>
+                <Label fx:id="bodyTextColor" alignment="CENTER" prefWidth="210.0" styleClass="body-text"
+                       text="Body Text Color: #e178f6" textFill="#e178f6"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

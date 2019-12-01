@@ -1,0 +1,20 @@
+.root {
+    -fx-base: #424250;
+    -fx-font-family: Marlett;
+}
+
+.anchor-pane {
+    -fx-background-color: derive(#424250, -50%);
+}
+
+.hyperlink {
+    -fx-text-fill: deepskyblue;
+}
+
+.header-text {
+    -fx-text-fill: #f5007a;
+}
+
+.body-text {
+    -fx-text-fill: #e178f6;
+}

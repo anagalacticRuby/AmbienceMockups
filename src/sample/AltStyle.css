@@ -1,0 +1,25 @@
+.root {
+    -fx-base: #404040;
+}
+
+.anchor-pane {
+    /*-fx-background-color: derive(indigo, -40%);*/
+    -fx-background-color: derive(#1f2f1f, -40%);
+    -fx-progress-color: #172317;
+}
+
+.hyperlink {
+    /*-fx-text-fill: #644a69;*/
+    -fx-text-fill: deeppink;
+}
+
+.body-text {
+    /*-fx-text-fill: #be71d9;*/
+    -fx-text-fill: derive(silver, 20%);
+    -fx-progress-color: #96ccb2;
+}
+
+.header-text {
+    -fx-text-fill: derive(#43D58C, 20%);
+    -fx-progress-color: #63dda0;
+}

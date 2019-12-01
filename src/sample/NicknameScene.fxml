@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="335.0" styleClass="anchor-pane" stylesheets="@AmbienceStyle.css"
+            xmlns="http://javafx.com/javafx/1.8.191" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <ToolBar prefHeight="50.0" prefWidth="335.0">
+        <Button fx:id="upButton" mnemonicParsing="false" onMouseClicked="#returnToMainMenu" text="&lt;-"/>
+        <Label styleClass="header-text" text="Nickname Scene"/>
+    </ToolBar>
+    <Label layoutX="61.0" layoutY="110.0" styleClass="body-text" text="What would you like to go by?"/>
+    <Label layoutX="43.0" layoutY="173.0" styleClass="body-text" text="(Error Message: No profane usernames)"/>
+    <TextField layoutX="69.0" layoutY="137.0" promptText="Nickname Here"/>
+    <Button fx:id="joinRoomButt" layoutX="123.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#goToRoom"
+            text="Accept"/>
+</AnchorPane>
