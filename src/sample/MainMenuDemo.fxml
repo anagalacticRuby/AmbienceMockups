@@ -72,7 +72,7 @@
                         <Font size="14.0"/>
                     </font>
                 </Hyperlink>
-                <CheckBox fx:id="themebutt" alignment="CENTER" indeterminate="true" mnemonicParsing="false"
+                <CheckBox fx:id="themeCheck" alignment="CENTER" indeterminate="true" mnemonicParsing="false"
                           onAction="#changeTheme" prefHeight="20.0" prefWidth="150.0" style="-fx-text-fill: ghostwhite;"
                           styleClass="body-text" text="Change Theme?">
                     <font>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AmbienceMockups:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AmbienceMockups_jar</output-path>
+    <root id="archive" name="AmbienceMockups.jar">
+      <element id="module-output" name="AmbienceMockups" />
+    </root>
+  </artifact>
+</component>

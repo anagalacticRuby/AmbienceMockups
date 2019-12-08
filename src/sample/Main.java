@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 /**
  * This entire program is a mockup for the Ambience application. All screens may be subject to
  * change if there is a desire, so nothing is 100% certain to be in the final just yet. Last edited
- * on: 12/1/2019. 
+ * on: 12/1/2019.
  *
  * @author Nicholas Hansen
  */

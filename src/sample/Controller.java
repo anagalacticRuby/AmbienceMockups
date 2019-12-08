@@ -16,7 +16,7 @@ public class Controller {
 
   @FXML public Button upButton;
 
-  @FXML private CheckBox themebutt;
+  @FXML private CheckBox themeCheck;
 
   @FXML private TextField roomName;
 
@@ -116,14 +116,14 @@ public class Controller {
    */
   @FXML
   void changeTheme(ActionEvent event) {
-    if (themebutt.isSelected()) {
-      themebutt.getScene().getStylesheets().remove("sample/AmbienceStyle.css");
-      themebutt.getScene().getStylesheets().add("sample/AltStyle.css");
+    if (themeCheck.isSelected()) {
+      themeCheck.getScene().getStylesheets().remove("sample/AmbienceStyle.css");
+      themeCheck.getScene().getStylesheets().add("sample/AltStyle.css");
       bgColorText.setText("Background Color: #172317");
       bodyTextColor.setText("Body Text Color: #96ccb2");
       headerTextColor.setText("Header Text Color: #63dda0");
     } else {
-      themebutt.getScene().getStylesheets().add("sample/AmbienceStyle.css");
+      themeCheck.getScene().getStylesheets().add("sample/AmbienceStyle.css");
       bgColorText.setText("Background Color: #212128");
       bodyTextColor.setText("Body Text Color: #e178f6");
       headerTextColor.setText("Header Text Color: #f5007a");
